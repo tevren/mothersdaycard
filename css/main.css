@@ -1,0 +1,225 @@
+html {
+	background: url("http://www.nps.gov/grsm/planyourvisit/images/crootof-sunrise.jpg");
+ background-size: 115% auto;
+}
+
+.styleguide {
+	padding: 100px;
+	background: #f5f5f5;
+}
+
+.patterns {
+	width: 150px;
+	height: 150px;
+	padding: 25px;
+	margin:0 10px 10px 0;
+	display: inline-block;
+}
+
+.pattern-one {
+	background: url("../img/floral-pattern.jpg");
+	background-repeat: repeat;
+}
+
+.pattern-two {
+	background: url("../img/multi-color-dots.jpg");
+	background-repeat: repeat;
+}
+
+.pattern-three {
+	background: url("../img/polka-dots-light.png");
+	background-repeat: repeat;
+}
+
+.pattern-four {
+	background: url("../img/texture.jpg");
+	background-repeat: repeat;
+}
+
+.pattern-five {
+	background: url("../img/triangles.jpg");
+	background-repeat: repeat;
+}
+
+.pattern-six {
+	background: url("../img/soft.png");
+	background-repeat: repeat;
+}
+
+.pattern-seven {
+	background: url("../img/knit.png");
+	background-repeat: repeat;
+}
+
+.pattern-eight {
+	background: url("../img/mocha.png");
+	background-repeat: repeat;
+}
+
+.antic-slab {
+	font-family: 'Antic Slab', serif;
+}
+
+.lora {
+	font-family: 'Lora', serif;
+}
+
+.sofia {
+	font-family: 'Sofia', cursive;
+}
+
+.mr-dafoe {
+	font-family: 'Mr Dafoe', cursive;
+}
+
+.droid-serif {
+	font-family: 'Droid Serif', serif;
+}
+
+.montserrat {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.satisfy {
+	font-family: 'Satisfy', cursive;
+}
+
+.amatic {
+	font-family: 'Amatic SC', cursive;
+}
+
+.rochester {
+	font-family: 'Rochester', cursive;
+}
+
+.raleway {
+	font-family: 'Raleway', sans-serif;
+}
+
+.large {
+	font-size: 4em;
+}
+
+.medium {
+	font-size: 3em;
+}
+
+.small {
+	font-size: 2em;
+}
+
+.dark-purple {
+	color:#6F2653;
+}
+
+.hot-pink {
+	color:#D43A80;
+}
+
+.pink {
+	color:#EB7EA5;
+}
+
+.forest-green {
+	color:#2C4832;
+}
+
+.green {
+	color:#58804E;
+}
+
+.gold {
+	color:#B09455;
+}
+
+.salmon {
+	color:#FC6551;
+}
+
+.orange {
+	color:#D74933;
+}
+
+.soft-yellow {
+	color:#EEBC75;
+}
+
+.rose {
+	color:#E8495D;
+}
+
+.light-pink {
+	color:#FF8699;
+}
+
+.flesh-pink {
+	color:#F9C2AD;
+}
+
+.text-color {
+	color:#33292F;
+}
+
+.white {
+	color:#FFFFFF;
+}
+
+.background-one {
+	background-color:#FFFFFF;
+}
+
+.background-two {
+	background-color:#FEF2FE;
+}
+
+.background-three {
+	background-color:#FFFFF3;
+}
+
+button {
+	padding: 10px;
+}
+
+/* CARD FLIP! */
+
+.flip {
+	-webkit-perspective: 800;
+	width: 500px;
+	height: 700px;
+	position: relative;
+	margin: 50px auto;
+}
+
+.flip .card.flipped {
+ 	-webkit-transform: rotatey(-180deg);
+}
+
+.flip .card {
+	width: 500px;
+	height: 700px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: 0.5s;
+	box-shadow: 0px 0px 15px #888888;
+}
+
+.flip .card .face {
+	width: 450px;
+	height: 650px;
+	padding: 25px;
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+	z-index: 2;
+	font-family: Georgia;
+	text-align: center;
+}
+
+.flip .card .front {
+	position: absolute;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.flip .card .back {
+	-webkit-transform: rotatey(-180deg);
+	cursor: pointer;
+}
