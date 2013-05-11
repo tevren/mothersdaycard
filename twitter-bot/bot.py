@@ -42,13 +42,13 @@ for i in range(len(already_messaged)):
         continue
 
     already_messaged[i] = already_messaged[i].replace('\n', '').split('|')[1].replace('\n', '')
-already_messaged.append('bot') # don't reply to myself
+already_messaged.append('haveaniceday') # don't reply to myself
 
 # perform the search
-results = api.GetSearch('bad day', since_id=last_id)
+results = api.GetSearch('sad', since_id=last_id)
 
 # uncomment out the next line to test that you are getting results from your api search
-# print 'Found %s results.' % (len(results))
+print 'Found %s results.' % (len(results))
 
 # if no results, quit
 if len(results) == 0:
@@ -56,10 +56,10 @@ if len(results) == 0:
 
 # create a list of statuses you want to send
 tweets = [
-    "",
-    "",
-    "",
-    "",
+    "Was today bad? There's always tomorrow #TheSunWillComeOut #GodBless",
+    "I'm sorry that your'e sad. But hey, atleast your'e foxy.",
+    "Happy bear wants you to be happy... http://derekotoole.files.wordpress.com/2012/04/happy-bear.jpg",
+    "Ur kewt wen ur hapi #SmilePlz",
 ];
 
 # create an array of users you've replied to
